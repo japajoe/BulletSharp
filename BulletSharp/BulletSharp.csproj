@@ -2,16 +2,21 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
-    <Version>0.12.0.0</Version>
-    <Authors>Andres Traks</Authors>
-    <Company />
-    <PackageLicenseUrl>https://github.com/AndresTraks/BulletSharpPInvoke/blob/master/BulletSharp/license.txt</PackageLicenseUrl>
-    <PackageProjectUrl>https://andrestraks.github.io/BulletSharp/</PackageProjectUrl>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageIconUrl>https://raw.githubusercontent.com/AndresTraks/BulletSharp/gh-pages/images/bullet_logo_64x64.png</PackageIconUrl>
-    <Description>.NET wrapper for the Bullet physics engine</Description>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PackageId>JAJ.Packages.BulletSharp</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>W.M.R Jap-A-Joe</Authors>
+    <RepositoryUrl>https://github.com/japajoe/BulletSharp.git</RepositoryUrl> 
+    <RepositoryType>git</RepositoryType>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/japajoe/BulletSharp</PackageProjectUrl>
+    <Description>.NET wrapper for the Bullet physics engine</Description>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="runtimes/**" PackagePath="runtimes" Visible="false" />
+  </ItemGroup>
 
   <ItemGroup>
     <Compile Remove="demos\**" />
