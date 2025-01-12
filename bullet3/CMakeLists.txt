@@ -23,7 +23,7 @@ ENDIF (NOT CMAKE_BUILD_TYPE)
 SET(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -D_DEBUG")
 #MESSAGE("CMAKE_CXX_FLAGS_DEBUG="+${CMAKE_CXX_FLAGS_DEBUG})
 
-OPTION(USE_DOUBLE_PRECISION "Use double precision"	OFF)
+OPTION(USE_DOUBLE_PRECISION "Use double precision"	ON)
 SET(CLAMP_VELOCITIES "0" CACHE STRING "Clamp rigid bodies' velocity to this value, if larger than zero. Useful to prevent floating point errors or in general runaway velocities in complex scenarios")
 OPTION(USE_GRAPHICAL_BENCHMARK "Use Graphical Benchmark" ON)
 OPTION(BUILD_SHARED_LIBS "Use shared libraries" OFF)
@@ -222,7 +222,7 @@ ENDIF(INTERNAL_CREATE_MSVC_RELATIVE_PATH_PROJECTFILES)
 ENDIF (WIN32)
 
 
-OPTION(BUILD_CPU_DEMOS "Build original Bullet CPU examples" ON)
+OPTION(BUILD_CPU_DEMOS "Build original Bullet CPU examples" OFF)
 
 
 
@@ -349,8 +349,8 @@ IF(BUILD_PYBULLET)
 	FIND_PACKAGE(PythonLibs ${PYTHON_VERSION_STRING} EXACT)
 ENDIF(BUILD_PYBULLET)
 
-OPTION(BUILD_ENET "Set when you want to build apps with enet UDP networking support" ON)
-OPTION(BUILD_CLSOCKET "Set when you want to build apps with enet TCP networking support" ON)
+OPTION(BUILD_ENET "Set when you want to build apps with enet UDP networking support" OFF)
+OPTION(BUILD_CLSOCKET "Set when you want to build apps with enet TCP networking support" OFF)
 
 
 IF(BUILD_PYBULLET)
