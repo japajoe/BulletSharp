@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.1</TargetFramework>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <PackageId>JAJ.Packages.BulletSharp</PackageId>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Authors>W.M.R Jap-A-Joe</Authors>
     <RepositoryUrl>https://github.com/japajoe/BulletSharp.git</RepositoryUrl> 
     <RepositoryType>git</RepositoryType>

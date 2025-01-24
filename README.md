@@ -12,9 +12,13 @@ The benefit of P/Invoke over C++/CLI is that it runs on all platforms that suppo
 ![.NET Core](https://github.com/AndresTraks/BulletSharpPInvoke/workflows/.NET%20Core/badge.svg)
 
 # Changes in this fork
-The source code is the same. The license is the same. I do not claim any ownership of the sources. The difference is that this does not use DLL maps, who still uses that in 2025 when we have modern cross-platform dotnet? I've also released a Nuget package because I could never get the original one to work under Linux. Furthermore, I've added native libraries for Mac x86_64 and ARM64.
+The source code is the same. The license is the same. I do not claim any ownership of the sources. The difference is that this does not use DLL maps and has more target platforms.
 
 # Installation
 ```
-dotnet add package JAJ.Packages.BulletSharp --version 1.0.1
+dotnet add package JAJ.Packages.BulletSharp --version 1.0.2
 ```
+
+# Changes in 1.0.2
+- Provide correct binary for Mac x86_64
+- Add Linux ARM and ARM64.
