@@ -28,7 +28,7 @@ jobs:
         cmake --build .
 
     - name: Upload build artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: bulletc-build-macos-arm64        
         path: libbulletc/build/
@@ -58,7 +58,7 @@ jobs:
         cmake --build .
 
     - name: Upload build artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: bulletc-build-macos-x86_64        
         path: libbulletc/build/
@@ -89,7 +89,7 @@ jobs:
         cmake --build .
 
     - name: Upload build artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: bulletc-build-linux-x86_64
         path: libbulletc/build/
@@ -121,7 +121,7 @@ jobs:
         cmake --build .
 
     - name: Upload build artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: bulletc-build-linux-arm64
         path: libbulletc/build/
@@ -152,7 +152,7 @@ jobs:
         cmake --build .
 
     - name: Upload build artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: bulletc-build-linux-arm
         path: libbulletc/build/
@@ -180,7 +180,7 @@ jobs:
         cmake --build . --config Release
 
     - name: Upload build artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: bulletc-build-windows-${{ matrix.name }}
         path: libbulletc/build/
